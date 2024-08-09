@@ -1,0 +1,18 @@
+@import url(header.css);
+@import url(banner.css);
+
+:root{
+    --cor-fundo: grey; 
+    --branco: white;
+    --creme-degrade: linear-gradient(to right, #f2e4d5, #e1cdb5);
+    --marrom-claro: #a87d4d;
+    --branco: #ffffff;
+
+
+    --fonte-primaria:'Times New Roman', sans-serif;
+}
+
+body{
+    background-color: var(--cor-fundo);
+    font-family: var(--fonte-primaria);
+}
