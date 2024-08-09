@@ -37,7 +37,7 @@
 .banner_pesquisa_icone{
     position: absolute;
     transform: translateY(-50%);
-    background-image: url('../assets/lupa.svg');
+    background-image: url('/assets/lupa.svg');
     background-size: contain;
     background-repeat: no-repeat;
     right: 10px;
