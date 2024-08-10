@@ -1,0 +1,11 @@
+.carrossel{
+    color: var(--marrom-claro);
+    text-align: center;
+    padding: 2.5em 2em;
+}
+
+.carrossel_titulo{
+    color: var(--marrom-claro);
+    font-size: 1.125em;
+    font-weight: 700;
+}

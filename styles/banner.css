@@ -6,43 +6,37 @@
     padding: 2.5em 2em;
 }
 .banner_titulo{
-    font-size: 1.125rem;
+    font-size: 1.125em;
     font-weight: 700;
 }
 
 .banner_texto{
     font-weight: 500;
-    margin: 1rem 0;
+    margin: 1em 0;
 }
 
 .banner_pesquisa_conteiner{
     position: relative;
     display: inline-block;
-    width: 100%;
-    max-width: 400px;
 }
 
 .banner_pesquisa{
-    padding: 0.5rem 1rem;
-    border-radius: 25px;
+    background-color: transparent;
+    border-radius: 24px;
     border: 1px solid var(--marrom-claro);
-    font-size: 1rem;
-    box-sizing: border-box;
-    text-align: center;
-    padding-right: 1.5rem;
+    padding: 1em;
     width: 100%;
-    color: var(--marrom-claro); 
+    color: var(--preto);
+
 }
 
-.banner_pesquisa_icone{
-    position: absolute;
-    transform: translateY(-50%);
-    background-image: url('/assets/lupa.svg');
-    background-size: contain;
+.banner_pesquisa::placeholder{
+    font-family: var(--fonte-principal);
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    color: var(--branco);
+    background-image: url("/assets/lupa.svg");
     background-repeat: no-repeat;
-    right: 10px;
-    top: 50%;
-    width: 1.5em;
-    height: 1.5em;
+    background-position: 1em;
 }
-
