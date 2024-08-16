@@ -5,12 +5,12 @@
     text-align: center;
     padding: 2.5em 2em;
 }
-.banner_titulo{
+.banner_titulo, .email_titulo{
     font-size: 1.125em;
     font-weight: 700;
 }
 
-.banner_texto{
+.banner_texto, .email_texto{
     font-weight: 500;
     margin: 1em 0;
 }
@@ -37,6 +37,32 @@
     text-align: center;
     color: var(--branco);
     background-image: url("../assets/lupa.svg");
+    background-repeat: no-repeat;
+    background-position: 1em;
+}
+
+.email{
+    background-color: var(--branco);
+    color: var(--marrom);
+    text-align: start;
+    padding: 2.5em 2em;
+}
+
+.email_cadastro{
+    background-color: transparent;
+    border-radius: 24px;
+    border: 1px solid var(--marrom-claro);
+    padding: 1em;
+    width: 100%;
+}
+
+.email_cadastro::placeholder{
+    font-family: var(--fonte-principal);
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    color: var(--marrom-claro);
+    background-image: url("../assets/Email.svg");
     background-repeat: no-repeat;
     background-position: 1em;
 }

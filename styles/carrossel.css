@@ -1,10 +1,106 @@
-.carrossel{
+.carrossel_titulo{
     text-align: center;
-    padding: 2.5em 2em;
+    color: var(--marrom-claro);
+    font-size: 1.125rem;
+    font-weight: 700;
+    background-color: var(--branco);
+    padding: 1em;
+    text-transform: uppercase;
 }
 
-.carrossel_titulo{
-    color: var(--marrom-claro);
+.swiper-slide img{
+    width: 100%;
+    height: auto;
+}
+
+.swiper-pagination{
+    position: initial;
+    margin: 0.5em;
+}
+
+.card{
+    background-color: var(--branco);
+    padding: 1em;
+    border-radius: 0.625em;
+    margin: 1em;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.card_titulo{
     font-size: 1.125em;
     font-weight: 700;
+    color: var(--marrom-claro);
+    text-transform: uppercase;
 }
+
+.card_subtitulo{
+    font-weight: 600;
+    margin: 1em 0;
+    color: var(--marrom);
+}
+
+.card_texto{
+    font-weight: 500;
+    margin: 1em 0;
+    color: var(--preto-claro);
+}
+
+.card_infos{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: var(--fonte-primaria);
+    color: var(--preto);
+    padding: 1em;
+}
+
+.card_botoes{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 2em;
+}
+
+.botao{
+    text-decoration: none;
+    background: var(--marrom-claro);
+    color: var(--branco);
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.botao:hover {
+    background-color: var(--marrom);
+}
+
+.visitados{
+    text-align: center;
+}
+
+.lista{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.lista_itens{
+    display: flex;
+}
+
+.lista_itens a {
+    text-decoration: none;
+    display: inline-block;
+    color: var(--marrom-claro); /* Exemplo de cor */
+    font-weight: bold;
+    padding: 0.5em 1em;
+    border-radius: 0.25em;
+
+    background-color: var(--branco); /* Exemplo de cor */
+    transition: background-color 0.3s;
+}
+
+.lista_itens a:hover {
+    background-color: var(--marrom); /* Exemplo de cor */
+}
+

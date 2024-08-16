@@ -10,14 +10,13 @@
         <link rel="stylesheet" href="styles/banner.css">
         <link rel="stylesheet" href="styles/carrossel.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/><script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
     </head>
     <body>
         <header class="cabecalho">
             <div class="cabecalho_conteiner">
-                <span class="cabecalho_menu_hamburguer"></span>
-   	            <img src="assets/logo.png" alt="Logo clube do livro">
+                <span class="cabecalho_menu_hamburguer"></span> <img src="assets/logo.png" alt="Logo clube do livro">
             </div>
+
             <div class="cabecalho_conteiner">
                 <a href="#" class="cabecalho_link"> <img src="assets/Favoritos.svg" alt="Meus favoritos"></a>
                 <a href="#" class="cabecalho_link"> <img src="assets/Sacola.svg" alt="Minhas compras"></a>
@@ -33,8 +32,8 @@
                 <input type="search" class="banner_pesquisa" placeholder="Qual será sua próxima leitura?"> 
             </section>
 
-            <section class="carrossel">
-                <h2 class="carrossel_titulo">NOVIDADES</h2>
+            <section class="carrossel"> 
+                <h2 class="carrossel_titulo">NOVIDADES</h2> <!--carrossel lancamento-->
                 <!-- Slider main container -->
                 <div class="swiper">
                     <!-- If we need pagination -->
@@ -42,47 +41,121 @@
                     <!-- Additional required wrapper -->
                     <div class="swiper-wrapper">
                         <!-- Slides -->
-                        <div class="swiper-slide"> <img src="assets/livro-outlander1.jfif" alt="Outalnder livro 1"> </div>
-                        <div class="swiper-slide"> <img src="assets/livro-outlander2.jfif" alt="Outalnder livro 2"> </div>
-                        <div class="swiper-slide"> <img src="assets/livro-outlander3.jfif" alt="Outalnder livro 3"> </div>
-                        <div class="swiper-slide"> <img src="assets/livro-outlander4.jfif" alt="Outalnder livro 4"> </div>
-                        <div class="swiper-slide"> <img src="assets/livro-outlander5.jfif" alt="Outalnder livro 5"> </div>
-                        <div class="swiper-slide"> <img src="assets/livro-outlander6.jfif" alt="Outalnder livro 6"> </div>
-                        <div class="swiper-slide"> <img src="assets/livro-outlander7.jfif" alt="Outalnder livro 7"> </div>
-                        <div class="swiper-slide"> <img src="assets/livro-outlander8.jfif" alt="Outalnder livro 8"> </div>
-                        <div class="swiper-slide"> <img src="assets/livro-outlander9.jfif" alt="Outalnder livro 9"> </div>
+                        <div class="swiper-slide"> <img src="assets/livro-outlander1.jfif" alt="Outlander livro 1"> </div>
+                        <div class="swiper-slide"> <img src="assets/livro-outlander2.jfif" alt="Outlander livro 2"> </div>
+                        <div class="swiper-slide"> <img src="assets/livro-outlander3.jfif" alt="Outlander livro 3"> </div>
+                        <div class="swiper-slide"> <img src="assets/livro-outlander4.jfif" alt="Outlander livro 4"> </div>
+                        <div class="swiper-slide"> <img src="assets/livro-outlander5.jfif" alt="Outlander livro 5"> </div>
+                        <div class="swiper-slide"> <img src="assets/livro-outlander6.jfif" alt="Outlander livro 6"> </div>
+                        <div class="swiper-slide"> <img src="assets/livro-outlander7.jfif" alt="Outlander livro 7"> </div>
+                        <div class="swiper-slide"> <img src="assets/livro-outlander8.jfif" alt="Outlander livro 8"> </div>
+                        <div class="swiper-slide"> <img src="assets/livro-outlander9.jfif" alt="Outlander livro 9"> </div>
                     </div>
                     
                     <!-- If we need navigation buttons -->
-                   <!-- <div class="swiper-button-prev"></div> -->
+                    <!-- <div class="swiper-button-prev"></div> -->
                     <!--<div class="swiper-button-next"></div> -->
-                
                     <!-- If we need scrollbar -->
                     <!--<div class="swiper-scrollbar"></div>-->
-                </div>    
+                </div>  
 
+                <div class="card"> <!--card recomendação-->
+                        <div class="card_infos"> <!--linha 1-->
+                            <div>
+                                <h3 class="card_subtitulo">Talves você também se interesse por...</h3>
+                                <h2 class="card_titulo">De Sangue e Cinzas</h2>
+                                <p class="card_texto">Uma historia emocionate cheia de reviravoltas e com um romance épico!</p>
+                            </div> 
+                            <img src="assets/livro-desangueecinzas.jfif" alt="Livro De Sangue e Cinzas">
+                        </div>
+                        <div class="card_botoes"> <!--linha 2-->
+                            <div> 
+                                <img src="assets/Favoritos.svg" alt="Meus Favoritos"> 
+                                <img src="assets/Sacola.svg" alt="Minha Sacola"> 
+                            </div>
+                            <a href="#" class="botao">Saiba mais</a>
+                    </div>
                 </div>
 
+                <h2 class="carrossel_titulo">Mais lidos</h2> <!--carrossel mais vendidos-->
+                <div class="swiper">
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide"> <img src="assets/principecruel.jfif" alt="Livro 1: O Povo do Ar - O Principe Cruel"> </div>
+                        <div class="swiper-slide"> <img src="assets/oreiperverso.jfif" alt="Livro 2: O Povo do Ar - O Rei Perverso"> </div>
+                        <div class="swiper-slide"> <img src="assets/arainhadonada.jfif" alt="Livro 3: O Povo do Ar - A Rainha do Nada"> </div>
+                    </div>
+                    
+                    <!-- If we need navigation buttons -->
+                    <!-- <div class="swiper-button-prev"></div> -->
+                    <!--<div class="swiper-button-next"></div> -->
+                    <!-- If we need scrollbar -->
+                    <!--<div class="swiper-scrollbar"></div>-->
+                </div> 
+
+                <div class="card"> <!--card autora do mes-->
+                    <div class="card_infos"> <!--linha 1-->
+                        <div>
+                            <img src="assets/Estrelinhas.svg" alt="Estrelinhas">
+                            <h3 class="card_subtitulo">Autora do Mês</h3>
+                            <h2 class="card_titulo">Carina Rissi</h2>
+                            <p class="card_texto">Carina é uma escritora brasileira de ficção. Ficou famosa pela série Perdia, que recentimente foi adaptada para as telas do cinema.</p>
+                        </div> 
+                        <img src="assets/carinarissi.jfif" alt="Foto de Carina Rissi">
+                    </div>
+                    <div class="card_botoes"> <!--linha 2-->
+                        <div> 
+                            <img src="assets/Favoritos.svg" alt="Meus Favoritos"> 
+                            <img src="assets/Sacola.svg" alt="Minha Sacola"> 
+                        </div>
+                        <a href="#" class="botao">Saiba mais</a>
+                    </div>
+                </div>
+
+                <div class="visitados"> <!--topicos visitados recentimente-->
+                    <h2 class="card_titulo">Topicos visitados recentimente</h2>
+                    <div class="lista">
+                        <ul>
+                            <li class="lista_itens"> <a href="#">Romance</a> </li>
+                            <li class="lista_itens"> <a href="#">Fantasia</a> </li>
+                            <li class="lista_itens"> <a href="#">Distopia</a> </li>
+                            <li class="lista_itens"> <a href="#">Ficção cientifica</a> </li>
+                            <li class="lista_itens"> <a href="#">Poesias</a> </li>
+                            <li class="lista_itens"> <a href="#">Suspense</a> </li>
+                            <li class="lista_itens"> <a href="#">Terror</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="email"> <!--fique por dentro das novidades-->
+                    <h3 class="email_titulo">Fique por dentro das novidades</h3>
+                    <p class="email_texto">Atualizações de e-books, novos livros, novos grupos de leitura e outros.</p>
+                    <!--cadastro de email-->
+                    <form id="emailForm">
+                        <input type="email" id="email" name="email" class="email_cadastro" placeholder="Cadastre seu e-mail">
+                    </form>
+                </div>
             </section>
-            
         </main>
 
         <script>
-               const swiper = new Swiper('.swiper', {
+            const swiper = new Swiper('.swiper', {
                     // Optional parameters
                     spaceBetween: 10,
                     slidesPerView: 3,
-                  
                     // If we need pagination
                     pagination: {
-                      el: '.swiper-pagination',
-                      type: 'bullets',
+                        el: '.swiper-pagination',
+                        type: 'bullets',
                     },
                 });
         </script>
 
         <footer class="rodape">
-            
+            <p>Grupo Livros&Café</p>
         </footer>
     </body>
 </html>

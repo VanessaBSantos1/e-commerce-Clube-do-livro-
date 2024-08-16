@@ -2,13 +2,16 @@
 @import url(header.css);
 @import url(banner.css);
 @import url(carrossel.css);
+@import url(card.css);
 
 :root {
     --cor-fundo: #EBECEE; 
     --branco: #ffffff;
     --creme-degrade: linear-gradient(135deg, #f4e1c1, #d5b895, #a47e4a);
     --marrom-claro: #a87d4d;
+    --marrom: #5c3317;
     --preto: black;
+    --preto-claro: #333;
     --fonte-primaria:"Poppins", sans-serif;
 }
 
@@ -17,4 +20,28 @@ body{
     font-family: var(--fonte-primaria);
     font-size: 16px;
     font-weight: 400;
+}
+
+.rodape{
+    background-color: var(--branco);
+    font-family: var(--fonte-primaria);
+    color: var(--marrom-claro);
+}
+
+@media (min-width: 1024) and (max-width: 1728){
+    .cabecalho{
+        width: 50%;
+    }
+
+    .carrossel{
+        width: 50%; 
+    }
+
+    .card{
+        width: 50%;
+    }
+    .swiper-slide img{
+        width: 50%;
+    }
+    
 }
