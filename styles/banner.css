@@ -25,7 +25,7 @@
     border-radius: 24px;
     border: 1px solid var(--marrom-claro);
     padding: 1em;
-    width: 100%;
+    width: 50%;
     color: var(--preto);
 
 }
@@ -53,7 +53,7 @@
     border-radius: 24px;
     border: 1px solid var(--marrom-claro);
     padding: 1em;
-    width: 100%;
+    width: 50%;
 }
 
 .email_cadastro::placeholder{

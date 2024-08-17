@@ -2,7 +2,6 @@
 @import url(header.css);
 @import url(banner.css);
 @import url(carrossel.css);
-@import url(card.css);
 
 :root {
     --cor-fundo: #EBECEE; 
@@ -28,20 +27,56 @@ body{
     color: var(--marrom-claro);
 }
 
-@media (min-width: 1024) and (max-width: 1728){
-    .cabecalho{
-        width: 50%;
+/* Estilos padrão para telas menores (ex: celular) já aplicados */
+
+/* Tablets (entre 768px e 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .cabecalho {
+        width: 100%;
     }
 
+   
+
+    .carrossel_titulo{
+        width: 100%;
+    }
+
+    .card {
+        width: auto; /* Dois cards lado a lado */
+        margin: auto;
+    }
+}
+
+/* Desktops (1024px e maiores) */
+@media (min-width: 1024px) {
+    .cabecalho {
+        width: 100%;
+    }
+
+    .carrossel_conteiner{
+        display: flex;
+    }
     .carrossel{
-        width: 50%; 
+        width: 50%;
+        margin: auto;
+        flex-direction: row; /* Em telas maiores, os itens ficam em linha */
+        justify-content: space-between; /* Distribui espaço entre carrossel e card */
+        align-items: center;
+    }
+    .swiper {
+        width: 50%; /* O carrossel ocupa 70% do espaço */
     }
 
-    .card{
-        width: 50%;
+    .swiper {
+        width: 50%; /* O carrossel ocupa 70% do espaço disponível */
     }
-    .swiper-slide img{
-        width: 50%;
+
+    .card {
+        width: 28%; /* O card ocupa 28% do espaço disponível */
+        margin: 0; /* Remove a margem superior quando em layout de linha */
     }
-    
+
+    .swiper-slide img {
+        width: 100%; /* Ajusta a imagem do slide para preencher o slide */
+    }
 }

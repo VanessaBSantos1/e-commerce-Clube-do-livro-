@@ -32,8 +32,9 @@
                 <input type="search" class="banner_pesquisa" placeholder="Qual será sua próxima leitura?"> 
             </section>
 
-            <section class="carrossel"> 
-                <h2 class="carrossel_titulo">NOVIDADES</h2> <!--carrossel lancamento-->
+            <section class="carrossel_conteiner"> <!--lancamentos-->
+                <div class="carrossel">
+                    <h2 class="carrossel_titulo">NOVIDADES</h2> <!--carrossel lancamento-->
                 <!-- Slider main container -->
                 <div class="swiper">
                     <!-- If we need pagination -->
@@ -57,16 +58,18 @@
                     <!--<div class="swiper-button-next"></div> -->
                     <!-- If we need scrollbar -->
                     <!--<div class="swiper-scrollbar"></div>-->
-                </div>  
-
-                <div class="card"> <!--card recomendação-->
+                </div> 
+                <!--card recomendação-->
+                </div>
+                
+                <div class="card"> 
                         <div class="card_infos"> <!--linha 1-->
                             <div>
                                 <h3 class="card_subtitulo">Talves você também se interesse por...</h3>
                                 <h2 class="card_titulo">De Sangue e Cinzas</h2>
                                 <p class="card_texto">Uma historia emocionate cheia de reviravoltas e com um romance épico!</p>
                             </div> 
-                            <img src="assets/livro-desangueecinzas.jfif" alt="Livro De Sangue e Cinzas">
+                            <img src="assets/livro-desangueecinzas.jfif" alt="Livro De Sangue e Cinzas" class="img">
                         </div>
                         <div class="card_botoes"> <!--linha 2-->
                             <div> 
@@ -76,45 +79,51 @@
                             <a href="#" class="botao">Saiba mais</a>
                     </div>
                 </div>
+            </section>
 
-                <h2 class="carrossel_titulo">Mais lidos</h2> <!--carrossel mais vendidos-->
-                <div class="swiper">
-                    <!-- If we need pagination -->
-                    <div class="swiper-pagination"></div>
-                    <!-- Additional required wrapper -->
-                    <div class="swiper-wrapper">
-                        <!-- Slides -->
-                        <div class="swiper-slide"> <img src="assets/principecruel.jfif" alt="Livro 1: O Povo do Ar - O Principe Cruel"> </div>
-                        <div class="swiper-slide"> <img src="assets/oreiperverso.jfif" alt="Livro 2: O Povo do Ar - O Rei Perverso"> </div>
-                        <div class="swiper-slide"> <img src="assets/arainhadonada.jfif" alt="Livro 3: O Povo do Ar - A Rainha do Nada"> </div>
-                    </div>
-                    
-                    <!-- If we need navigation buttons -->
-                    <!-- <div class="swiper-button-prev"></div> -->
-                    <!--<div class="swiper-button-next"></div> -->
-                    <!-- If we need scrollbar -->
-                    <!--<div class="swiper-scrollbar"></div>-->
-                </div> 
-
-                <div class="card"> <!--card autora do mes-->
-                    <div class="card_infos"> <!--linha 1-->
-                        <div>
-                            <img src="assets/Estrelinhas.svg" alt="Estrelinhas">
-                            <h3 class="card_subtitulo">Autora do Mês</h3>
-                            <h2 class="card_titulo">Carina Rissi</h2>
-                            <p class="card_texto">Carina é uma escritora brasileira de ficção. Ficou famosa pela série Perdia, que recentimente foi adaptada para as telas do cinema.</p>
-                        </div> 
-                        <img src="assets/carinarissi.jfif" alt="Foto de Carina Rissi">
-                    </div>
-                    <div class="card_botoes"> <!--linha 2-->
-                        <div> 
-                            <img src="assets/Favoritos.svg" alt="Meus Favoritos"> 
-                            <img src="assets/Sacola.svg" alt="Minha Sacola"> 
+            <section class="carrossel_conteiner" > <!--mais lidos-->
+                <div class="carrossel">
+                    <h2 class="carrossel_titulo">Mais lidos</h2> <!--carrossel mais vendidos-->
+                    <div class="swiper">
+                        <!-- If we need pagination -->
+                        <div class="swiper-pagination"></div>
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide"> <img src="assets/principecruel.jfif" alt="Livro 1: O Povo do Ar - O Principe Cruel"> </div>
+                            <div class="swiper-slide"> <img src="assets/oreiperverso.jfif" alt="Livro 2: O Povo do Ar - O Rei Perverso"> </div>
+                            <div class="swiper-slide"> <img src="assets/arainhadonada.jfif" alt="Livro 3: O Povo do Ar - A Rainha do Nada"> </div>
                         </div>
-                        <a href="#" class="botao">Saiba mais</a>
-                    </div>
+                        
+                        <!-- If we need navigation buttons -->
+                        <!-- <div class="swiper-button-prev"></div> -->
+                        <!--<div class="swiper-button-next"></div> -->
+                        <!-- If we need scrollbar -->
+                        <!--<div class="swiper-scrollbar"></div>-->
+                    </div> 
                 </div>
 
+                <div class="card"> <!--card autora do mes-->
+                        <div class="card_infos"> <!--linha 1-->
+                            <div>
+                                <img src="assets/Estrelinhas.svg" alt="Estrelinhas">
+                                <h3 class="card_subtitulo">Autora do Mês</h3>
+                                <h2 class="card_titulo">Carina Rissi</h2>
+                                <p class="card_texto">Carina é uma escritora brasileira de ficção. Ficou famosa pela série Perdia, que recentimente foi adaptada para as telas do cinema.</p>
+                            </div> 
+                            <img src="assets/carinarissi.jfif" alt="Foto de Carina Rissi" class="img">
+                        </div>
+                        <div class="card_botoes"> <!--linha 2-->
+                            <div> 
+                                <img src="assets/Favoritos.svg" alt="Meus Favoritos"> 
+                                <img src="assets/Sacola.svg" alt="Minha Sacola"> 
+                            </div>
+                            <a href="#" class="botao">Saiba mais</a>
+                        </div>
+                </div>
+            </section>
+
+            <section class="mais_visitados"> <!--visitados-->
                 <div class="visitados"> <!--topicos visitados recentimente-->
                     <h2 class="card_titulo">Topicos visitados recentimente</h2>
                     <div class="lista">
@@ -129,7 +138,9 @@
                         </ul>
                     </div>
                 </div>
+            </section>
 
+            <section class="cadastro_email"><!--cadastro-email-->
                 <div class="email"> <!--fique por dentro das novidades-->
                     <h3 class="email_titulo">Fique por dentro das novidades</h3>
                     <p class="email_texto">Atualizações de e-books, novos livros, novos grupos de leitura e outros.</p>
@@ -139,6 +150,7 @@
                     </form>
                 </div>
             </section>
+            
         </main>
 
         <script>
