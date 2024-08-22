@@ -5,7 +5,6 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
 }
 
 .cabecalho_conteiner{
@@ -15,7 +14,6 @@
     padding: 1.5em 1.125em;
     background-repeat: no-repeat;
     background-position: center;
-    width: 100%;
 }
 
 .cabecalho_menu_hamburguer{

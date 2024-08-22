@@ -4,7 +4,6 @@
     color: var(--marrom-claro);
     text-align: center;
     padding: 2.5em 2em;
-    width: 100%;
 }
 .banner_titulo, .email_titulo{
     font-size: 1.125em;
@@ -68,14 +67,4 @@
     background-position: 1em;
 }
 
-@media (min-width: 768px) and (max-width: 1024px){
-    .banner_pesquisa{
-        width: 50%;
-    }
-}
 
-@media (min-width: 1024px) {
-    .banner_pesquisa{
-        width: 50%;
-    } 
-}

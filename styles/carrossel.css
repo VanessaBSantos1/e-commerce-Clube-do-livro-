@@ -1,7 +1,6 @@
 .carrossel_conteiner {
     display: flex;
     flex-direction: column; 
-    width: 100%;
 }
 
 .carrossel_titulo{
@@ -151,7 +150,6 @@
 
     .swiper-slide img{
         width: auto;
-        max-width: 100%;
     }
 
     .card{
@@ -176,7 +174,6 @@
     }
     .carrossel_conteiner{
         flex-direction: row;
-        /*overflow-x: auto;*/
         gap: 20px;
     }
 
