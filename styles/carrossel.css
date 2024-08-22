@@ -174,10 +174,6 @@
     .swiper-button-prev,.swiper-button-next {
         display: none !important; /* Adiciona !important para garantir a aplicação */
     }
-    .swiper-button-prev, .swiper-button-next {
-        width: 10px; /* Reduz a largura dos botões */
-        height: 10px; /* Reduz a altura dos botões */
-    }
 }
 
 
