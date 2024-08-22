@@ -53,7 +53,7 @@
     border-radius: 24px;
     border: 1px solid var(--marrom-claro);
     padding: 1em;
-    width: 50%;
+    width: 70%;
 }
 
 .email_cadastro::placeholder{
@@ -67,4 +67,14 @@
     background-position: 1em;
 }
 
+@media (min-width: 768px) and (max-width: 1024px){
+    .banner_pesquisa{
+        width: 50%;
+    }
+}
 
+@media (min-width: 1024px) {
+    .banner_pesquisa{
+        width: 50%;
+    } 
+}

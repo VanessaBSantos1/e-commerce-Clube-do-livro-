@@ -34,32 +34,34 @@
 
             <h2 class="carrossel_titulo">NOVIDADES</h2> <!--carrossel lancamento-->
             <section class="carrossel_conteiner"> <!--lancamentos-->
-                <div class="carrossel">
-                <!-- Slider main container -->
-                <div class="swiper">
-                    <!-- If we need pagination -->
-                    <div class="swiper-pagination"></div>
-                    <!-- Additional required wrapper -->
-                    <div class="swiper-wrapper">
-                        <!-- Slides -->
-                        <div class="swiper-slide"> <img src="assets/livro-outlander1.jfif" alt="Outlander livro 1"> </div>
-                        <div class="swiper-slide"> <img src="assets/livro-outlander2.jfif" alt="Outlander livro 2"> </div>
-                        <div class="swiper-slide"> <img src="assets/livro-outlander3.jfif" alt="Outlander livro 3"> </div>
-                        <div class="swiper-slide"> <img src="assets/livro-outlander4.jfif" alt="Outlander livro 4"> </div>
-                        <div class="swiper-slide"> <img src="assets/livro-outlander5.jfif" alt="Outlander livro 5"> </div>
-                        <div class="swiper-slide"> <img src="assets/livro-outlander6.jfif" alt="Outlander livro 6"> </div>
-                        <div class="swiper-slide"> <img src="assets/livro-outlander7.jfif" alt="Outlander livro 7"> </div>
-                        <div class="swiper-slide"> <img src="assets/livro-outlander8.jfif" alt="Outlander livro 8"> </div>
-                        <div class="swiper-slide"> <img src="assets/livro-outlander9.jfif" alt="Outlander livro 9"> </div>
-                    </div>
-                    
-                    <!-- If we need navigation buttons -->
-                    <!-- <div class="swiper-button-prev"></div> -->
-                    <!--<div class="swiper-button-next"></div> -->
-                    <!-- If we need scrollbar -->
-                    <!--<div class="swiper-scrollbar"></div>-->
-                </div> 
-                <!--card recomendação-->
+                <div class="carrossel" id="carrossel1">
+                    <!-- Slider main container -->
+                    <div class="swiper">
+                        <!-- If we need pagination -->
+                        <div class="swiper-pagination"></div>
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide"> <img src="assets/livro-outlander1.jfif" alt="Outlander livro 1"> </div>
+                            <div class="swiper-slide"> <img src="assets/livro-outlander2.jfif" alt="Outlander livro 2"> </div>
+                            <div class="swiper-slide"> <img src="assets/livro-outlander3.jfif" alt="Outlander livro 3"> </div>
+                            <div class="swiper-slide"> <img src="assets/livro-outlander4.jfif" alt="Outlander livro 4"> </div>
+                            <div class="swiper-slide"> <img src="assets/livro-outlander5.jfif" alt="Outlander livro 5"> </div>
+                            <div class="swiper-slide"> <img src="assets/livro-outlander6.jfif" alt="Outlander livro 6"> </div>
+                            <div class="swiper-slide"> <img src="assets/livro-outlander7.jfif" alt="Outlander livro 7"> </div>
+                            <div class="swiper-slide"> <img src="assets/livro-outlander8.jfif" alt="Outlander livro 8"> </div>
+                            <div class="swiper-slide"> <img src="assets/livro-outlander9.jfif" alt="Outlander livro 9"> </div>
+                        </div>
+                        
+                        <!-- If we need navigation buttons -->
+                        <!-- <div class="swiper-button-prev"></div> -->
+                        <!--<div class="swiper-button-next"></div> -->
+                        <!-- If we need scrollbar -->
+                        <!--<div class="swiper-scrollbar"></div>-->
+                    </div> 
+                    <div class="swiper-button-prev" id="prev1"></div>
+                    <div class="swiper-button-next" id="next1"></div>
+                    <!--card recomendação-->
                 </div>
                 
                 <div class="card"> 
@@ -83,7 +85,7 @@
             
             <h2 class="carrossel_titulo">Mais lidos</h2> <!--carrossel mais vendidos-->
             <section class="carrossel_conteiner" > <!--mais lidos-->
-                <div class="carrossel">
+                <div class="carrossel" id="carrossel2">
                     <div class="swiper">
                         <!-- If we need pagination -->
                         <div class="swiper-pagination"></div>
@@ -101,6 +103,8 @@
                         <!-- If we need scrollbar -->
                         <!--<div class="swiper-scrollbar"></div>-->
                     </div> 
+                    <div class="swiper-button-prev" id="prev2"></div>
+                    <div class="swiper-button-next" id="next2"></div>
                 </div>
 
                 <div class="card"> <!--card autora do mes-->
@@ -154,16 +158,23 @@
         </main>
 
         <script>
-            const swiper = new Swiper('.swiper', {
-                    // Optional parameters
-                    spaceBetween: 10,
-                    slidesPerView: 3,
-                    // If we need pagination
-                    pagination: {
-                        el: '.swiper-pagination',
-                        type: 'bullets',
-                    },
-                });
+            const swiper1 = new Swiper('#carrossel1 .swiper', {
+                spaceBetween: 10,
+                slidesPerView: 3,
+                navigation: {
+                    nextEl: '#next1',
+                    prevEl: '#prev1',
+                },
+            });
+
+            const swiper2 = new Swiper('#carrossel2 .swiper', {
+                spaceBetween: 10,
+                slidesPerView: 3,
+                navigation: {
+                    nextEl: '#next2',
+                    prevEl: '#prev2',
+                },
+            });
         </script>
 
         <footer class="rodape">
