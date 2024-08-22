@@ -155,7 +155,7 @@
     }
 }
 
-/* Desktops (1024px e maiores) */
+
 @media (min-width: 1024px) {
     .cabecalho {
         width: 100%;
