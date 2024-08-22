@@ -72,3 +72,9 @@
         width: 50%;
     }
 }
+
+@media (min-width: 1024px) {
+    .banner_pesquisa{
+        width: 50%;
+    } 
+}

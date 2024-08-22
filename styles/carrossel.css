@@ -128,6 +128,10 @@
 
 /* Tablets (entre 768px e 1024px) */
 @media (min-width: 768px) and (max-width: 1024px) {
+    .cabecalho, .rodape, .mais_visitados, .cadastro_email {
+        width: 100%;
+    }
+
     .carrossel_conteiner{
         flex-direction: column;
         align-items: center;
@@ -157,7 +161,7 @@
 
 
 @media (min-width: 1024px) {
-    .cabecalho {
+    .cabecalho, .banner, .rodape, .mais_visitados, .cadastro_email {
         width: 100%;
     }
     .carrossel_titulo{
