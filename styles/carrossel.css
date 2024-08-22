@@ -131,107 +131,7 @@
     background-color: var(--marrom); 
 }
 
-@media (min-width: 370px) and (max-width: 428px) {
-    .swiper-button-prev, .swiper-button-next {
-        display: none !important;
-    }
-}
-
-/* Tablets (entre 768px e 1024px) */
-@media (min-width: 768px) and (max-width: 1024px) {
-    .carrossel_conteiner{
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .carrossel, .card{
-        width: 50%;
-    }
-    .carrossel_titulo{
-        padding: 1.5em;
-    }
-
-    .swiper{
-        width: 78%;
-        margin: 5em auto;
-    }
-
-    .swiper-slide img{
-        width: auto;
-    }
-
-    .card{
-        margin-bottom: 1em;
-    }
-
-    #prev1, #next1,     #prev2, #next2 {
-        /* Estilos compartilhados para ambos os conjuntos de botões */
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            width: 40px;
-            height: 40px;
-            background-color: var(--marrom-claro);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: var(--branco);
-            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
-            cursor: pointer;
-            z-index: 10;
-        }   
-    
-        #prev1 {
-            left: -20px;
-            }
-    
-        #next1 {
-            right: -20px;
-            }
-    
-        #prev2 {
-            left: -20px;
-            }
-    
-        #next2 {
-            right: -20px;
-            }
-    
-        #prev1:hover, #next1:hover, #prev2:hover, #next2:hover {
-            background-color: var(--marrom);
-        }
-}
-
-
-@media (min-width: 1024px) {
-    .carrossel_titulo{
-        padding: 1.5em;
-    }
-
-    .swiper{
-        width: 78%;
-        margin: 5em auto;
-    }
-
-    .swiper-slide img{
-        width: auto;
-        max-width: 100%;
-    }
-    .carrossel_conteiner{
-        flex-direction: row;
-        gap: 20px;
-    }
-
-    .carrossel, .card{
-        width: 50%;
-    }
-
-    .email_cadastro{
-        width: 50%;
-    }
-
-    #prev1, #next1,     #prev2, #next2 {
+#prev1, #next1,     #prev2, #next2 {
     /* Estilos compartilhados para ambos os conjuntos de botões */
         position: absolute;
         top: 50%;
@@ -267,5 +167,70 @@
 
     #prev1:hover, #next1:hover, #prev2:hover, #next2:hover {
         background-color: var(--marrom);
+    }
+
+/* Estilos para ocultar os botões em telas pequenas */
+@media (max-width: 728px) {
+    .swiper-button-prev,
+    .swiper-button-next {
+        display: none !important; /* Adiciona !important para garantir a aplicação */
+    }
+}
+
+
+/* Tablets (entre 768px e 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .carrossel_conteiner{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .carrossel, .card{
+        width: 50%;
+    }
+    .carrossel_titulo{
+        padding: 1.5em;
+    }
+
+    .swiper{
+        width: 78%;
+        margin: 5em auto;
+    }
+
+    .swiper-slide img{
+        width: auto;
+    }
+
+    .card{
+        margin-bottom: 1em;
+    }
+}
+
+
+@media (min-width: 1024px) {
+    .carrossel_titulo{
+        padding: 1.5em;
+    }
+
+    .swiper{
+        width: 78%;
+        margin: 5em auto;
+    }
+
+    .swiper-slide img{
+        width: auto;
+        max-width: 100%;
+    }
+    .carrossel_conteiner{
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    .carrossel, .card{
+        width: 50%;
+    }
+
+    .email_cadastro{
+        width: 50%;
     }
 }
