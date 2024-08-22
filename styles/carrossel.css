@@ -185,7 +185,10 @@
         align-items: center;
     }
 
-    .carrossel, .card{
+    .carrossel{
+        width: 100%;
+    }
+    .card{
         width: 50%;
     }
     .carrossel_titulo{
@@ -193,7 +196,7 @@
     }
 
     .swiper{
-        width: 78%;
+        width: 100%;
         margin: 5em auto;
     }
 
@@ -201,9 +204,6 @@
         width: auto;
     }
 
-    .card{
-        margin-bottom: 1em;
-    }
 }
 
 
