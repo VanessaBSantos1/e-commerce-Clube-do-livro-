@@ -227,6 +227,10 @@
         width: 50%;
     }
 
+    .email_cadastro{
+        width: 50%;
+    }
+
     #prev1, #next1,     #prev2, #next2 {
     /* Estilos compartilhados para ambos os conjuntos de botões */
         position: absolute;
