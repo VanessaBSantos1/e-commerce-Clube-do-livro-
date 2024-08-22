@@ -1,6 +1,7 @@
 .carrossel_conteiner {
     display: flex;
     flex-direction: column; 
+    width: 100%;
 }
 
 .carrossel_titulo{
@@ -11,7 +12,6 @@
     background-color: var(--branco);
     padding: 1em;
     text-transform: uppercase;
-    width: 100%;
 }
 
 .swiper{
@@ -93,6 +93,10 @@
     background-color: var(--marrom);
 }
 
+.mais_visitados{
+    width: 100%;
+}
+
 .visitados{
     text-align: center;
     background: var(--creme-degrade);
@@ -128,10 +132,6 @@
 
 /* Tablets (entre 768px e 1024px) */
 @media (min-width: 768px) and (max-width: 1024px) {
-    .cabecalho, .rodape, .mais_visitados, .cadastro_email {
-        width: 100%;
-    }
-
     .carrossel_conteiner{
         flex-direction: column;
         align-items: center;
@@ -161,9 +161,6 @@
 
 
 @media (min-width: 1024px) {
-    .cabecalho, .banner, .rodape, .mais_visitados, .cadastro_email {
-        width: 100%;
-    }
     .carrossel_titulo{
         padding: 1.5em;
     }

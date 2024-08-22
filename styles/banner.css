@@ -4,6 +4,7 @@
     color: var(--marrom-claro);
     text-align: center;
     padding: 2.5em 2em;
+    width: 100%;
 }
 .banner_titulo, .email_titulo{
     font-size: 1.125em;
