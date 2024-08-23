@@ -40,12 +40,19 @@
     background-repeat: no-repeat;
     background-position: 1em;
 }
+.conteiner_email{
+    background-color: var(--branco);
+    padding: 2em;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
 
 .email{
     background-color: var(--branco);
-    color: var(--marrom);
-    text-align: start;
+    color: var(--marrom); 
     padding: 2.5em 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .email_cadastro{
@@ -53,7 +60,8 @@
     border-radius: 24px;
     border: 1px solid var(--marrom-claro);
     padding: 1em;
-    width: 70%;
+    width: 100%;
+    margin-top: 1em;
 }
 
 .email_cadastro::placeholder{
@@ -67,14 +75,45 @@
     background-position: 1em;
 }
 
+/* Tablets (entre 768px e 1024px) */
 @media (min-width: 768px) and (max-width: 1024px){
     .banner_pesquisa{
         width: 50%;
     }
+    .email{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .texto{
+        width: 50%;
+    }
+    .input_email{
+        width: 50%;
+    }
+    .email_cadastro{
+        width: 100%;
+    }
+
 }
 
+/* Desktops (1024px e maiores) */
 @media (min-width: 1024px) {
     .banner_pesquisa{
         width: 50%;
-    } 
+    }
+    .email{
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .texto{
+        width: 40%;
+    }
+    .input_email{
+        width: 60%;
+    }
+    .email_cadastro{
+        width: 100%;
+    }
 }

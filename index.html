@@ -28,7 +28,7 @@
         <main>
             <section class="banner">
                 <h2 class="banner_titulo">Já sabe por onde começar?</h2>
-                <p class="banner_texto">Encontre em nossa estante uma nova opçao para ser sua leitura atual!</p>
+                <p class="banner_texto">Encontre em nossa estante uma nova opção para ser sua leitura atual!</p>
                 <input type="search" class="banner_pesquisa" placeholder="Qual será sua próxima leitura?"> 
             </section>
 
@@ -113,7 +113,7 @@
                                 <img src="assets/Estrelinhas.svg" alt="Estrelinhas">
                                 <h3 class="card_subtitulo">Autora do Mês</h3>
                                 <h2 class="card_titulo">Carina Rissi</h2>
-                                <p class="card_texto">Carina é uma escritora brasileira de ficção. Ficou famosa pela série Perdia, que recentimente foi adaptada para as telas do cinema.</p>
+                                <p class="card_texto">Carina é uma escritora brasileira de ficção. Ficou famosa pela série Perdida, que recentimente foi adaptada para as telas do cinema.</p>
                             </div> 
                             <img src="assets/carinarissi.jfif" alt="Foto de Carina Rissi" class="img">
                         </div>
@@ -129,29 +129,32 @@
 
             <section class="mais_visitados"> <!--visitados-->
                 <div class="visitados"> <!--topicos visitados recentimente-->
-                    <h2 class="card_titulo">Topicos visitados recentimente</h2>
+                    <h2 class="card_titulo">Topicos mais visitados</h2>
                     <div class="lista">
-                        <ul>
-                            <li class="lista_itens"> <a href="#">Romance</a> </li>
-                            <li class="lista_itens"> <a href="#">Fantasia</a> </li>
-                            <li class="lista_itens"> <a href="#">Distopia</a> </li>
-                            <li class="lista_itens"> <a href="#">Ficção cientifica</a> </li>
-                            <li class="lista_itens"> <a href="#">Poesias</a> </li>
-                            <li class="lista_itens"> <a href="#">Suspense</a> </li>
-                            <li class="lista_itens"> <a href="#">Terror</a></li>
-                        </ul>
+                        <div class="lista_item"><a href="#">Romance</a></div>
+                        <div class="lista_item"><a href="#">Fantasia</a></div>
+                        <div class="lista_item"><a href="#">Distopia</a></div>
+                        <div class="lista_item"><a href="#">Ficção científica</a></div>
+                        <div class="lista_item"><a href="#">Poesias</a></div>
+                        <div class="lista_item"><a href="#">Suspense</a></div>
+                        <div class="lista_item"><a href="#">Terror</a></div>
+                    </div>
                     </div>
                 </div>
             </section>
 
-            <section class="cadastro_email"><!--cadastro-email-->
+            <section class="conteiner_email"><!--cadastro-email-->
                 <div class="email"> <!--fique por dentro das novidades-->
-                    <h3 class="email_titulo">Fique por dentro das novidades</h3>
-                    <p class="email_texto">Atualizações de e-books, novos livros, novos grupos de leitura e outros.</p>
+                    <div class="texto">
+                        <h3 class="email_titulo">Fique por dentro das novidades</h3>
+                        <p class="email_texto">Atualizações de e-books, novos livros, novos grupos de leitura e outros.</p>
+                    </div>
                     <!--cadastro de email-->
-                    <form id="emailForm">
-                        <input type="email" id="email" name="email" class="email_cadastro" placeholder="Cadastre seu e-mail">
-                    </form>
+                    <div class="input_email">
+                        <form id="emailForm">
+                            <input type="email" id="email" name="email" class="email_cadastro" placeholder="Cadastre seu e-mail">
+                        </form>
+                    </div>
                 </div>
             </section>
             

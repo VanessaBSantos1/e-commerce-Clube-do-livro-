@@ -25,5 +25,5 @@ body{
     background-color: var(--branco);
     font-family: var(--fonte-primaria);
     color: var(--marrom-claro);
-    width: 100%;
+    padding: 1em;
 }
